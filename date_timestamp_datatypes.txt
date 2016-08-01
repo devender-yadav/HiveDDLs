@@ -1,0 +1,12 @@
+
+    CREATE TABLE all_datetime_types(
+      c_date date, 
+      c_timestamp timestamp
+    );
+    
+
+
+// Minimum and maximum data values:
+
+    insert into all_datetime_types values ('0001-01-01','0001-01-01 00:00:00.000000001');
+    insert into all_datetime_types values ('9999-12-31','9999-12-31 23:59:59.999999999');
