@@ -1,0 +1,17 @@
+    CREATE TABLE uniontype_data_type(
+      c_uniontype uniontype<int, double, array<string>)
+     ROW FORMAT DELIMITED 
+      FIELDS TERMINATED BY ',' 
+      COLLECTION ITEMS TERMINATED BY '&';
+
+
+// `data.csv` file:
+
+    0&10
+    1&10.23
+    2&arr1&arr2
+
+
+// Load data into hive:
+
+    LOAD DATA LOCAL INPATH '/tmp/data.csv' INTO TABLE uniontype_data_type;
