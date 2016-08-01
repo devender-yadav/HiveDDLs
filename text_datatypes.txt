@@ -1,0 +1,9 @@
+    CREATE TABLE all_text_types(
+      c_char char(255), 
+      c_varchar varchar(65535), 
+      c_string string 
+    );
+
+//Sample data:
+
+    insert into all_text_type values ('some ****&&&%%% char value ','some $$$$#####@@@@ varchar value','some !!~~~++ string value' );
