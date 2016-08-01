@@ -1,0 +1,22 @@
+    CREATE TABLE array_data_type(
+      c_array array<string>)
+     ROW FORMAT DELIMITED 
+      FIELDS TERMINATED BY ',' 
+      COLLECTION ITEMS TERMINATED BY '&';
+
+// Create `data.csv` with data:
+
+    arr1&arr2
+    arr2&arr4
+
+
+// Put `data.csv` in `/tmp` folderand load this data in Hive
+
+
+    LOAD DATA LOCAL INPATH '/tmp/data.csv' INTO TABLE array_data_type;
+
+
+// Or you can put this CSV in HDFS say at `/tmp`. Load data from CSV at HDFS using 
+
+
+    LOAD DATA INPATH '/tmp/data.csv' INTO TABLE array_data_type;
