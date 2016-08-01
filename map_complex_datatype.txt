@@ -1,0 +1,16 @@
+    CREATE TABLE map_data_type(
+      c_map map<int,string>)
+     ROW FORMAT DELIMITED 
+      FIELDS TERMINATED BY ',' 
+      COLLECTION ITEMS TERMINATED BY '&'
+      MAP KEYS TERMINATED BY '#';
+
+
+// `data.csv` file:
+
+    101#map1&102#map2
+    103#map3&104#map4
+
+// Load data into hive:
+
+    LOAD DATA LOCAL INPATH '/tmp/data.csv' INTO TABLE map_data_type;
