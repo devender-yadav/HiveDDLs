@@ -1,0 +1,15 @@
+    CREATE TABLE struct_data_type(
+      c_struct struct<c1:smallint,c2:varchar(30)>)
+     ROW FORMAT DELIMITED 
+      FIELDS TERMINATED BY ',' 
+      COLLECTION ITEMS TERMINATED BY '&';
+
+
+// `data.csv` file:
+
+    101&struct1
+    102&struct2
+
+// Load data into hive:
+
+    LOAD DATA LOCAL INPATH '/tmp/data.csv' INTO TABLE struct_data_type;
