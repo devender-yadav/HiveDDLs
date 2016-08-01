@@ -1,0 +1,14 @@
+    CREATE TABLE all_binary_types(
+      c_boolean boolean, 
+      c_binary binary 
+    );
+
+// Sample data:
+
+    insert into all_binary_types values (0,1234);
+    insert into all_binary_types values (1,4321);
+
+
+
+// For boolean, internally it stored as true or false.
+// For binary, it will store base64 encoded value.
