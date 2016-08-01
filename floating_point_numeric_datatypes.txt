@@ -1,0 +1,11 @@
+     CREATE TABLE all_floating_numeric_types(
+      c_float float, 
+      c2_double double
+    );
+
+// Minimum and maximum data values:
+
+    insert into all_floating_numeric_types values (-3.4028235E38,-1.7976931348623157E308);
+    insert into all_floating_numeric_types values (-1.4E-45,-4.9E-324);
+    insert into all_floating_numeric_types values (1.4E-45,4.9E-324);
+    insert into all_floating_numeric_types values (3.4028235E38,1.7976931348623157E308);
