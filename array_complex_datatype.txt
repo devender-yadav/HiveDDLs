@@ -10,7 +10,7 @@
     arr2&arr4
 
 
-// Put `data.csv` in `/tmp` folderand load this data in Hive
+// Put `data.csv` in `/tmp` folder and load this data in Hive
 
 
     LOAD DATA LOCAL INPATH '/tmp/data.csv' INTO TABLE array_data_type;
