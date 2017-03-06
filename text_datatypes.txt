@@ -6,4 +6,4 @@
 
 //Sample data:
 
-    insert into all_text_type values ('some ****&&&%%% char value ','some $$$$#####@@@@ varchar value','some !!~~~++ string value' );
+    insert into all_text_types values ('some ****&&&%%% char value ','some $$$$#####@@@@ varchar value','some !!~~~++ string value' );
