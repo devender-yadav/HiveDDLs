@@ -1,6 +1,6 @@
      CREATE TABLE all_floating_numeric_types(
       c_float float, 
-      c2_double double
+      c_double double
     );
 
 // Minimum and maximum data values:
